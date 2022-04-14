@@ -11,10 +11,10 @@ The new images are stored with the original Filename and without extension**
 python3 python3-simle-imageBulkEdit.py
 
 ### The script ask for 4 inputs:
-·pathOrigin = The original (full or relative) Path to the images directory.
-·pathDestination = Directory where the images are going to be saved.
-·desiredRotation = Rotation in degrees (clock direction) for the new image.
-·desiredSize = Tuple with the desired size (like "128, 128")
+1. pathOrigin = The original (full or relative) Path to the images directory.
+2. pathDestination = Directory where the images are going to be saved.
+3. desiredRotation = Rotation in degrees (clock direction) for the new image.
+4. desiredSize = Tuple with the desired size (like "128, 128")
 
 ## WARNINGS
 ### Warning 1 *
