@@ -1,4 +1,6 @@
-# import OS module
+#! /usr/bin/env python3
+
+# import modules
 import os
 from PIL import Image
 
