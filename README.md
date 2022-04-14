@@ -25,3 +25,13 @@ Without extension: Set the "desiredExtension" variable to set up an extension fo
 
 ### Warning 3
 All parameters must to be given to avoid a crash
+
+
+# Want to test it?
+
+You can use following command concatenation to use a 100 images collection from Google:
+
+curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=$11hg55-dKdHN63yJP20dMLAgPJ5oiTOHF" > /dev/null | curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=11hg55-dKdHN63yJP20dMLAgPJ5oiTOHF" -o images.zip && sudo rm -rf cookie
+
+Don't forget to unzip the file!
+unzip images.zip
