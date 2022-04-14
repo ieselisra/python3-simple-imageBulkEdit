@@ -11,10 +11,10 @@ The new images are stored with the original Filename and without extension**
 python3 python3-simle-imageBulkEdit.py
 
 ### The script ask for 4 inputs:
-pathOrigin = The original (full or relative) Path to the images directory.
-pathDestination = Directory where the images are going to be saved.
-desiredRotation = Rotation in degrees (clock direction) for the new image.
-desiredSize = Tuple with the desired size (like "128, 128")
+·pathOrigin = The original (full or relative) Path to the images directory.
+·pathDestination = Directory where the images are going to be saved.
+·desiredRotation = Rotation in degrees (clock direction) for the new image.
+·desiredSize = Tuple with the desired size (like "128, 128")
 
 ## WARNINGS
 ### Warning 1 *
@@ -31,7 +31,7 @@ All parameters must to be given to avoid a crash
 
 You can use following command concatenation to use a 100 images collection from Google:
 
-curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=$11hg55-dKdHN63yJP20dMLAgPJ5oiTOHF" > /dev/null | curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=11hg55-dKdHN63yJP20dMLAgPJ5oiTOHF" -o images.zip && sudo rm -rf cookie
+'curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=$11hg55-dKdHN63yJP20dMLAgPJ5oiTOHF" > /dev/null | curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=11hg55-dKdHN63yJP20dMLAgPJ5oiTOHF" -o images.zip && sudo rm -rf cookie'
 
 Don't forget to unzip the file!
 unzip images.zip
